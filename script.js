@@ -7,9 +7,10 @@ quests.addClass('hide');
 quests.eq(0).removeClass('hide');
 var selected = $('.quests').find('.selected');
 var li = $('.quests').find('li');
+var liScore =li.attr('data-index-number');
 
 
-quests.find('li').on('click', function(){
+li.on('click', function(){
     schovaj();
     console.log(li.attr('data-index-number'));
    
@@ -32,7 +33,20 @@ function schovaj (){
 // })
 
 
+function score(a, b) {
+    return (Math.abs(a+b));
+  }
+  
+  console.log(score(5, 5));
+  
 
+  function dataScore (score, liScore ) {
+    return (Math.abs(score + liScore));
+  }
+
+  console.log(dataScore);
+
+  
 
 
 
