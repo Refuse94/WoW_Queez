@@ -12,8 +12,8 @@ var liScore =li.attr('data-index-number');
 
 li.on('click', function(){
     schovaj();
-    console.log(li.attr('data-index-number'));
-   
+    console.log(li.attr('data-index-number')); // Nerozumiem, prečo keď kliknem na iný "li" element, tak vypisuje stále hodnotu prvého.
+    console.log(li.attr('data-value'));
 })
 
 function schovaj (){
@@ -46,7 +46,9 @@ function score(a, b) {
 
   console.log(dataScore);
 
-  
+
+
+
 
 
 
