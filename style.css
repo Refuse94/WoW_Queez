@@ -21,12 +21,12 @@ body{
     margin-top: 7rem;
 }
 
-.container h1{
+.quests h1{
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
 
-.container ul{
+.quests ul{
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
@@ -36,26 +36,26 @@ body{
     text-decoration: bold;
 }
 
-.container li{
+.quests li{
     padding: 1rem;
     background: rgb(25, 175, 75);
     cursor: pointer;
 }
 
-.container li:hover{
+.quests li:hover{
     background: blue;
 }
-.container h2{
+.quests h2{
     margin-top: 4rem;
 }
-.container p{
+.quests p{
     padding: .2rem;
     background: rgb(25, 175, 75);
     margin-left: 40%;
     margin-right: 40%;
     margin-bottom: 10%;
 }
-.container a{
+.quests a{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
