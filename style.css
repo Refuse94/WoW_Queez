@@ -27,30 +27,31 @@ body{
 }
 
 .quests ul{
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 2rem;
     list-style: none;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 32rem;
+    margin-right: 33rem;
     text-decoration: bold;
 }
 
 .quests li{
-    padding: 1rem;
-    background: rgb(25, 175, 75);
+    padding: 1.5rem;
+    background: rgb(10, 163, 117);
     cursor: pointer;
+
 }
 
 .quests li:hover{
-    background: blue;
+    background: rgb(187, 209, 224);
 }
 .quests h2{
     margin-top: 4rem;
 }
 .quests p{
     padding: .2rem;
-    background: rgb(25, 175, 75);
+    background: rgb(10, 163, 117);
     margin-left: 40%;
     margin-right: 40%;
     margin-bottom: 10%;
@@ -59,10 +60,48 @@ body{
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+   
     
 }
+
+.quests span{
+    text-transform: uppercase;
+    background: rgb(11, 122, 89);  
+    margin-right: 7rem;
+    padding: 1.5rem; 
+    padding-top: 1.5rem;
+   
+}
+ /* ====================HIDE CLASS ========================== */
+
+
 
 .hide{
     display:none;
 }
 
+
+/* =============== PROGRESS BARR ================== */
+
+.progres_bar{
+    margin-left: 55rem;
+    
+} 
+
+.progres_bar h2{
+    margin-bottom: 1rem;
+}
+
+.progres_bar p {
+    padding: 0.3rem;
+    background: rgb(10, 163, 117);
+    margin-right: 45rem;
+    margin-left: -11rem;
+}
+
+/* ==================== FOOOOOTER SETTINGS  ================== */
+footer{
+    text-align: center;
+    margin-top: 5rem;
+    font-weight: bold;
+}

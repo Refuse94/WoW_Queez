@@ -1,16 +1,12 @@
 (function($){
 
-console.log('počujeme sa? ');
-
 var quests = $('.quests').find('div');
 quests.addClass('hide');
 quests.eq(0).removeClass('hide');
+
 var selected = $('.quests').find('.selected');
 var li = $('.quests').find('li');
-var liScore =li.attr('data-index-number');
-
-
-
+var liScore =li.attr('data-index-number');  // pokus o vytiahnutie data atributu
 
 li.on('click', function(){
     schovaj();
@@ -25,8 +21,10 @@ function schovaj (){
     selected.addClass('selected').siblings().removeClass('selected');
     selected.removeClass('hide');
 }
+// =================== Asi iba po tialto to funguje xD ====================
 
 
+// ============== toto malo tiež vytiahnuť data atribut ale nejako nefungoval forEach =============
 
 // const events = document.querySelector('.quests');
 // events.forEach(e => {
@@ -34,7 +32,7 @@ function schovaj (){
     
 // })
 
-
+// ============================  Skusanie si math operácie a ako to vlastne funguje, / snaha o prirátanie data atributu k vytvorenému atributu v premennej ==============
 function score(a, b) {
     return (Math.abs(a+b));
   }
@@ -48,6 +46,9 @@ function score(a, b) {
 
   console.log(dataScore);
 
+// =====================================Vytvorenie SCORE DIVU ktorý sa zobrazí na konci , chcem ho potom naštýlovať na poslednej stránke  ktorá sa zobrazí a nejak naň naviazať ten
+// =======================================      neexistujúci prepočet čo možno niekedy vznikne       ===================================================================
+
 
   var amNew = $('<div/>').html('SCORE');      
       amNew.appendTo('footer');
@@ -56,11 +57,8 @@ function score(a, b) {
 // intiger.appendTo('footer');
 
 
-
-
-
-
-
+// ================= Funkcia na TIMER , pôvodne som chcel okopírovať, a upraviť na to aby ukazoval 30 sekund a odrátaval sa, ale zistil som že sa nevypisuje správne=================
+// ============ plus s mojimi znalostami js , nedokážem upraviť kód tak aby fungoval ==============================================
 const startingMinuites = 10;
 let time = startingMinuites *60;
 const countdownEl = document.getElementById('countdown');
@@ -76,17 +74,7 @@ function updateCountdown(){
     time--;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+//========= keď mi ešte nefungoval slider na otázky, tak som sa snažil nejako získať cez html idčko každej otázky a slidovať to cez to idčko , / = nedokázal som získať idčko =====
 
 
 // var id = container.find('id');
