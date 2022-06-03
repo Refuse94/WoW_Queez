@@ -57,22 +57,7 @@ function score(a, b) {
 // intiger.appendTo('footer');
 
 
-// ================= Funkcia na TIMER , pôvodne som chcel okopírovať, a upraviť na to aby ukazoval 30 sekund a odrátaval sa, ale zistil som že sa nevypisuje správne=================
-// ============ plus s mojimi znalostami js , nedokážem upraviť kód tak aby fungoval ==============================================
-const startingMinuites = 10;
-let time = startingMinuites *60;
-const countdownEl = document.getElementById('countdown');
-setInterval(updateCountdown, 1000);
 
-function updateCountdown(){
-    const minutes =Math.floor(time / 60);
-    let seconds = time % 60;
-
-    seconds = seconds < 10 ? '0' + seconds : seconds;
-
-    countdownEl.innerHTML= '${minutes}: ${seconds}';
-    time--;
-}
 
 //========= keď mi ešte nefungoval slider na otázky, tak som sa snažil nejako získať cez html idčko každej otázky a slidovať to cez to idčko , / = nedokázal som získať idčko =====
 
