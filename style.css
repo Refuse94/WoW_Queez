@@ -12,7 +12,7 @@ body{
     color: #fff;
 }
 /* ===================================== STYLE QUESTIONS ====================================== */
-.wrapper{
+/* .wrapper{
     margin: auto;
     padding: auto;
     text-align: center;
@@ -71,7 +71,60 @@ body{
     padding: 1.5rem; 
     padding-top: 1.5rem;
    
+} */
+.wrapper{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 7rem;
 }
+
+.quests h1{
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.quests li{
+    padding: 1.5rem;
+    background: rgb(10, 163, 117);
+    cursor: pointer;
+
+}
+
+.quests a{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6rem;
+    
+   
+    
+}
+.quests span{
+    text-transform: uppercase;
+    background: rgb(11, 122, 89);  
+    padding-top: .1rem;
+    overflow: hidden;
+   
+}
+.quests ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    list-style: none;
+    margin-left: 32rem;
+    margin-right: 33rem;
+    text-decoration: bold;
+}
+
+.quests a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
  /* ====================HIDE CLASS ========================== */
 
 
