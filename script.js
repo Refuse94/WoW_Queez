@@ -6,12 +6,19 @@ quests.eq(0).removeClass('hide');
 
 var selected = $('.quests').find('.selected');
 var li = $('.quests').find('li');
-var liScore =li.attr('data-index-number');  // pokus o vytiahnutie data atributu
+
+var score = $('#score');
+var totalScore = 0;
+
+
+
 
 li.on('click', function(){
     schovaj();
-    console.log(li.attr('data-index-number')); // Nerozumiem, prečo keď kliknem na iný "li" element, tak vypisuje stále hodnotu prvého.
-    console.log(li.attr('data-value'));
+    totalScore += $(this).data('value')*1;
+    score.text('Score:'+ ' ' + totalScore);
+    console.log($(this).data('score'));
+   
 })
 
 function schovaj (){
@@ -33,25 +40,16 @@ function schovaj (){
 // })
 
 // ============================  Skusanie si math operácie a ako to vlastne funguje, / snaha o prirátanie data atributu k vytvorenému atributu v premennej ==============
-function score(a, b) {
-    return (Math.abs(a+b));
-  }
-  
-  console.log(score(5, 5));
+
+
   
 
-  function dataScore (score, liScore ) {
-    return (Math.abs(score + liScore));
-  }
-
-  console.log(dataScore);
 
 // =====================================Vytvorenie SCORE DIVU ktorý sa zobrazí na konci , chcem ho potom naštýlovať na poslednej stránke  ktorá sa zobrazí a nejak naň naviazať ten
 // =======================================      neexistujúci prepočet čo možno niekedy vznikne       ===================================================================
 
 
-  var amNew = $('<div/>').html('SCORE');      
-      amNew.appendTo('footer');
+
 
 // var intiger = 10;
 // intiger.appendTo('footer');
