@@ -1,6 +1,6 @@
 function updateProgressBar(progressBar, value) {
     value = Math.round(value);
-    progressBar.querySelector(".progress__fill").style.width = `${fill}1%`;
+    progressBar.querySelector(".progress__fill").style.width = `${fill}0%`;
     progressBar.querySelector(".progress__text").textContent = `${value}/10`;
   }
   
@@ -11,7 +11,7 @@ function updateProgressBar(progressBar, value) {
 
   var li = $('.quests').find('li');
   var value= 1;
-  var fill = 1;
+  var fill = 0;
  
 
   li.on('click', function(){
