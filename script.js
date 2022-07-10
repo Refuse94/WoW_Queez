@@ -18,6 +18,9 @@ li.on('click', function(){
     totalScore += $(this).data('value')*1;
     score.text('Score:'+ ' ' + totalScore);
     console.log($(this).data('score'));
+    clearInterval(time_out);
+    timer();
+
    
 })
 
