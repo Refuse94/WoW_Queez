@@ -3,14 +3,14 @@ var timer_id;
 
 
 function timer() {
-  var time_limit = 5;
+  var time_limit = 30;
 
 
   timer_id = setInterval(() => {
     if (time_limit == 0) {
       time_out = true
 
-      $('#timer').html('Time Over').hide(1000);
+      $('#timer').html('Čas vypršal').hide(5000);
 
 
 

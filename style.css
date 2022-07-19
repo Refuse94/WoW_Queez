@@ -29,7 +29,8 @@ body{
 
 .quests li{
     padding: 1.5rem;
-    background: rgb(10, 163, 117);
+    background: rgb(15, 70, 53);
+    background: linear-gradient(to right, rgb(15, 70, 53) 0%,rgb(15, 70, 53) 15%,rgb(10, 163, 117) 15%,rgb(10, 163, 117),rgb(10, 163, 117),rgb(10, 163, 117) 100%);
     cursor: pointer;
 
 }
@@ -42,14 +43,7 @@ body{
    
     
 }
-.quests span{
-    text-transform: uppercase;
-    background: rgb(11, 122, 89);  
-    padding-top: .1rem;
-    overflow: hidden;
-    
-   
-}
+
 .quests ul{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -67,7 +61,10 @@ body{
 }
 
 .quests li:hover{
-    background: rgb(187, 209, 224);
+    background: rgb(6, 219, 226);
+    transform: scale(1.05);
+    transition: ease 1.9s;
+  
 }
 
 

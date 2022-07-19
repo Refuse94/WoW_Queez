@@ -5,6 +5,7 @@
     quests.eq(0).removeClass('hide');
 
     var selected = $('.quests').find('.selected');
+   
     var li = $('.quests').find('li');
 
     var score = $('#score');
@@ -30,7 +31,10 @@
             score.text('Score:' + ' ' + totalScore);
         }
 
-
+        if ($('#ten') == selected){
+            $('#timer').hide();
+        }
+        console.log('selectnuta classa : ',selected);
 
 
 
@@ -45,11 +49,10 @@
         selected.removeClass('hide');
 
     }
-
-    function ukaz() {
-        $('#timer').html("").show();
-
-    }
+    
+   var koniec = $('#ten').find('li');
+   koniec.$('#timer').hide();
+    
 
 
 
