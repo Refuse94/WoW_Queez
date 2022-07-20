@@ -42,6 +42,10 @@
 
     }
     
+    function ukaz() {
+        $('#timer').html("").show();
+
+    } 
    var lastanswer = $('#ten').find('li');
 
    lastanswer.on('click', function () {

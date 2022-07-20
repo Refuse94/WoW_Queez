@@ -3,7 +3,7 @@ var timer_id;
 
 
 function timer() {
-  var time_limit = 30;
+  var time_limit = 8;
 
 
   timer_id = setInterval(() => {
