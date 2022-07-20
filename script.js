@@ -6,7 +6,7 @@
 
     var selected = $('.quests').find('.selected');
    
-    var li = $('.quests').find('li');
+    var answers = $('.quests').find('li');
 
     var score = $('#score');
     var totalScore = 0;
@@ -14,7 +14,7 @@
 
 
 
-    li.on('click', function () {
+    answers.on('click', function () {
         schovaj();
         clearInterval(timer_id);
         timer();
@@ -31,14 +31,6 @@
             score.text('Score:' + ' ' + totalScore);
         }
 
-        if ($('#ten') == selected){
-            $('#timer').hide();
-        }
-        console.log('selectnuta classa : ',selected);
-
-
-
-
     })
 
     function schovaj() {
@@ -50,9 +42,9 @@
 
     }
     
-   var koniec = $('#ten').find('li');
+   var lastanswer = $('#ten').find('li');
 
-   koniec.on('click', function () {
+   lastanswer.on('click', function () {
     $('#timer').hide();
    })
 

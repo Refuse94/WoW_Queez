@@ -9,11 +9,11 @@ function updateProgressBar(progressBar, value) {
   /* Example */
 //   updateProgressBar(myProgressBar, 30);
 
-  var li = $('.quests').find('li');
+  var answers = $('.quests').find('li');
   var value= 1;
   var fill = 0;
  
 
-  li.on('click', function(){
+  answers.on('click', function(){
     updateProgressBar(myProgressBar, value++, fill++);
 })
