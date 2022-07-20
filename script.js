@@ -18,10 +18,8 @@
         schovaj();
         clearInterval(timer_id);
         timer();
-        time_limit = 5;
-
-
         if (time_out == true) {
+            console.log("here");
             ukaz()
         } else {
             console.log("totalscore", totalScore);
@@ -41,8 +39,9 @@
         selected.removeClass('hide');
 
     }
-    
+
     function ukaz() {
+        console.log("ukaž")
         $('#timer').html("").show();
 
     } 
