@@ -125,4 +125,107 @@ footer{
     margin-left: 45%;
     margin-top: 2rem;
   }
-/* ============ TEST PROGRESU ========================== */
+/* ============ MEDIA QUERIES ========================== */
+
+@media (max-width:113rem) {
+    .quests ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 25rem;
+        margin-right: 25rem;
+        text-decoration: bold;
+    }
+}
+
+@media (max-width:100rem) {
+    .quests ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 20rem;
+        margin-right: 20rem;
+        text-decoration: bold;
+    }
+}
+
+@media (max-width:88rem) {
+    .quests ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        text-decoration: bold;
+    }
+}
+
+@media (max-width:80rem) {
+    .quests ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 10rem;
+        margin-right: 10rem;
+        text-decoration: bold;
+    }
+}
+
+
+@media (max-width:69rem) {
+    .quests ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        text-decoration: bold;
+    }
+}
+
+@media (max-width:58rem) {
+    .quests ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-decoration: bold;
+    }
+}
+
+
+@media (max-width:50rem) {
+    .quests ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        list-style: none;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-decoration: bold;
+    }
+
+    .progress {
+        position: relative;
+        width: 210px;
+        height: 30px;
+        background: rgb(10, 163, 117);
+        border-radius: 5px;
+        overflow: hidden;
+        margin-left: 32%;
+        margin-top: 5rem;
+    }
+
+    #timer {
+        font-size: 4rem;
+        margin-left: 30%;
+        margin-top: 2rem;
+    }
+}
