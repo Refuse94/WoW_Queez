@@ -51,8 +51,10 @@
     }
     
    var koniec = $('#ten').find('li');
-   koniec.$('#timer').hide();
-    
+
+   koniec.on('click', function () {
+    $('#timer').hide();
+   })
 
 
 
