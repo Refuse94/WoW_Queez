@@ -7,7 +7,7 @@
 
 ## Použite grafiku viď obrázok nižšie.
 
-![](images/obr.png)
+![](images/filename%20obr.png)
  
 ## Bonusová úloha:
 ### Naprogramujte timer ktorý bude trvať 30 sekúnd. Na každú otázku naviažte timer ktorý bude prepojený s odpoveďou a po uplynutí timera osoba dostane rovno „0“ bodov a posunie sa na ďalšiu otázku.
