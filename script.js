@@ -42,7 +42,7 @@
 
     function ukaz() {
         
-        $('#timer').stop(false,true).show();
+        $('#timer').stop().show();
 
     } 
    var lastanswer = $('#ten').find('li');
