@@ -19,7 +19,7 @@
         clearInterval(timer_id);
         timer();
         if (time_out == true) {
-            console.log("here");
+            
             ukaz()
         } else {
             console.log("totalscore", totalScore);
@@ -41,8 +41,8 @@
     }
 
     function ukaz() {
-        console.log("ukaž")
-        $('#timer').html("").show();
+        
+        $('#timer').stop(false,true).show();
 
     } 
    var lastanswer = $('#ten').find('li');
